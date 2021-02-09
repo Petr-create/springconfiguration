@@ -2,8 +2,8 @@ package ru.itsjava;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.itsjava.app.services.ICustomer;
-import ru.itsjava.dto.Coffee;
+import ru.itsjava.app.services.Customer;
+import ru.itsjava.domain.Coffee;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,6 +18,6 @@ public class Main {
         double price = Double.parseDouble(reader.readLine());
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("app-config.xml");
-        applicationContext.getBean(ICustomer.class).printBuy(new Coffee(brand, cookingMethod, price));
+        applicationContext.getBean(Customer.class).printBuy(new Coffee(brand, cookingMethod, price));
     }
 }

@@ -1,14 +1,15 @@
 package ru.itsjava.app.services;
 
 import lombok.RequiredArgsConstructor;
-import ru.itsjava.dto.Coffee;
+import ru.itsjava.domain.Coffee;
 
 @RequiredArgsConstructor
-public class CustomerImpl implements ICustomer{
-    private final ICoffeeHouse iCoffeeHouse;
+public class CustomerImpl implements Customer {
+    private final CoffeeHouse coffeeHouse;
 
     @Override
     public void printBuy(Coffee coffee) {
-        iCoffeeHouse.buycoffee(coffee);
+        coffeeHouse.buyСoffee(coffee);
+
     }
 }

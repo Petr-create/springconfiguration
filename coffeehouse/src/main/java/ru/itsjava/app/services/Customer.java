@@ -1,7 +1,8 @@
 package ru.itsjava.app.services;
 
-import ru.itsjava.dto.Coffee;
+import ru.itsjava.domain.Coffee;
 
-public interface ICustomer {
+public interface Customer {
     void printBuy(Coffee coffee);
+
 }

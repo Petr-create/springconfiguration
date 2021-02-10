@@ -10,5 +10,6 @@ public class CustomerImpl implements Customer {
     @Override
     public void printBuy(Coffee coffee) {
         coffeeHouse.buyСoffee(coffee);
+
     }
 }

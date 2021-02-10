@@ -20,4 +20,5 @@ public class Main {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("app-config.xml");
         applicationContext.getBean(Customer.class).printBuy(new Coffee(brand, cookingMethod, price));
     }
+
 }

@@ -2,13 +2,12 @@ package ru.itsjava.app.services;
 
 import ru.itsjava.domain.Coffee;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class CoffeeHouseImpl implements CoffeeHouse {
     private final List<Coffee> coffees;
     public CoffeeHouseImpl(){
-        this.coffees = Arrays.asList(
+        this.coffees = List.of(
             new Coffee("Lavazza", "espresso", 45.00),
             new Coffee("Lavazza", "cappuchino", 50.10),
             new Coffee("Lavazza", "americano", 60.25),

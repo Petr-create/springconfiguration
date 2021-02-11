@@ -8,9 +8,9 @@
   <artifactId>spring-configuration</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>coffeehouse</module>
+    <module>java-xml-configuration</module>
     <module>java-based-configuration</module>
-      <module>java-annotation-configuration</module>
+    <module>java-annotation-configuration</module>
   </modules>
   <packaging>pom</packaging>
 

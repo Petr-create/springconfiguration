@@ -1,14 +1,17 @@
 package ru.itsjava.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+@EqualsAndHashCode
 @AllArgsConstructor
 @ToString
 public class Coffee implements Comparable<Coffee>{
     private final String brand;
     private final String cookingMethod;
     private final double price;
+
 
     @Override
     public int compareTo(Coffee o) {
@@ -18,5 +21,4 @@ public class Coffee implements Comparable<Coffee>{
             return -1;
         }
     }
-
 }

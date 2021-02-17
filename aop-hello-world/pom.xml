@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aop</artifactId>
+    <artifactId>aop-hello-world</artifactId>
+
+    <properties>
+        <maven.compiler.source>13</maven.compiler.source>
+        <maven.compiler.target>13</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
@@ -20,6 +25,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>

@@ -5,6 +5,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 import ru.itsjava.domain.UserInfo;
+import ru.itsjava.exception.SecurityException;
 import ru.itsjava.services.SecurityManagerImpl;
 
 import java.io.IOException;
@@ -22,12 +23,10 @@ public class SecurityAdvice {
             System.out.println("Вы прошли проверку");
             System.out.println();
         } else {
-            try {
+
                 System.out.println("Вы не прошли проверку!");
                 throw new SecurityException();
-            }catch (SecurityException e){
-                System.out.println("Перехвачено исключение: " + e);
-            }
+
         }
     }
 }

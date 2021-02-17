@@ -11,6 +11,10 @@
     <module>java-xml-configuration</module>
     <module>java-based-configuration</module>
     <module>java-annotation-configuration</module>
+    <module>aop</module>
+    <module>aop-hello-world</module>
+      <module>aop-before-security</module>
+      <module>aop-before-mysecurity</module>
   </modules>
   <packaging>pom</packaging>
 

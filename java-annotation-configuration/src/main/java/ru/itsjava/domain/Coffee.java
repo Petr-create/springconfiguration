@@ -1,9 +1,9 @@
 package ru.itsjava.domain;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @ToString
 public class Coffee implements Comparable<Coffee>{
     private final String brand;

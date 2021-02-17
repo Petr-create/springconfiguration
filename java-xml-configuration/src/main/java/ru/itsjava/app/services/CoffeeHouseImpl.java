@@ -21,9 +21,16 @@ public class CoffeeHouseImpl implements CoffeeHouse {
     }
     @Override
     public void buyСoffee(Coffee coffee) {
+//        for(Coffee c : coffees){
+//            int number = c.compareTo(coffee);
+//            if(number == 0){
+//                System.out.println("Получите ваше кофе: " + c.toString());
+//                return;
+//            }
+//        }
+//        System.out.println("Такого кофе у нас нет в ассортименте");
         for(Coffee c : coffees){
-            int number = c.compareTo(coffee);
-            if(number == 0){
+            if(c.equals(coffee)){
                 System.out.println("Получите ваше кофе: " + c.toString());
                 return;
             }
